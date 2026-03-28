@@ -8,7 +8,13 @@ const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ['300', '400'
 export const metadata = {
   title: 'Farewell — Dept. of Computer Science',
   description: 'Farewell Invitation for HOD Dr. S. Mary Vennila — Department of Computer Science, Presidency College',
-  viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({ children }) {

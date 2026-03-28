@@ -119,11 +119,11 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: var(--navy
 .det-label { font-family: 'Cinzel', serif; font-size: clamp(6.5px, .65vw, 7.5px); letter-spacing: .28em; color: var(--gold); text-transform: uppercase; text-align: center; }
 .det-val { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: clamp(11.5px, 1.4vw, 17px); line-height: 1.2; color: #fff; letter-spacing: .05em; text-align: center; transition: all .3s ease; }
 
-.rsvp { position: relative; overflow: hidden; font-family: 'Cinzel', serif; font-weight: 700; font-size: clamp(7.5px, .82vw, 9.5px); letter-spacing: .2em; color: var(--navy-mid); background: linear-gradient(135deg, #C9A84C 0%, #F0C040 50%, #C9A84C 100%); background-size: 200% auto; border: none; padding: clamp(5.5px, .9vh, 11px) clamp(14px, 2.8vw, 36px); text-transform: uppercase; cursor: pointer; transition: background-position .4s, transform .2s, box-shadow .3s; }
-.rsvp:hover { background-position: right center; transform: translateY(-2px); box-shadow: 0 10px 32px rgba(201, 168, 76, .42); }
-.rsvp:active { transform: translateY(0); }
-.rsvp::before { content: ''; position: absolute; top: 0; left: -100%; width: 60%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .5), transparent); transform: skewX(-20deg); }
-.rsvp:hover::before { animation: btnSwipe .55s ease; }
+.rsvp { position: relative; overflow: hidden; font-family: 'Cinzel', serif; font-weight: 700; font-size: clamp(9px, 1.1vw, 12px); letter-spacing: .2em; color: var(--navy-deep); background: linear-gradient(135deg, #F0C040 0%, #FFE898 50%, #C9A84C 100%); background-size: 200% auto; border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 4px; padding: clamp(10px, 1.5vh, 14px) clamp(22px, 3.5vw, 40px); text-transform: uppercase; cursor: pointer; transition: all .3s ease; box-shadow: 0 6px 20px rgba(201, 168, 76, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.5); margin-top: 4px; }
+.rsvp:hover { background-position: right center; transform: translateY(-3px); box-shadow: 0 12px 35px rgba(201, 168, 76, .5), inset 0 2px 2px rgba(255, 255, 255, 0.8); border-color: rgba(255, 255, 255, 0.8); }
+.rsvp:active { transform: translateY(1px); box-shadow: 0 4px 10px rgba(201, 168, 76, .4); }
+.rsvp::before { content: ''; position: absolute; top: 0; left: -100%; width: 60%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .6), transparent); transform: skewX(-20deg); }
+.rsvp:hover::before { animation: btnSwipe .6s ease; }
 @keyframes btnSwipe { to { left: 150%; } }
 
 .ripple { position: absolute; border-radius: 50%; background: rgba(255, 255, 255, .4); transform: scale(0); animation: rpl .65s linear; pointer-events: none; }

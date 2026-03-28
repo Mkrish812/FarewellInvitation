@@ -282,7 +282,7 @@ export default function FarewellPage() {
             </div>
 
             <div className="rv" id="r10">
-              <button className="rsvp" id="rsvp-btn" onClick={handleRsvpClick}>✦ &nbsp;Register Your Presence&nbsp; ✦</button>
+              <button className="rsvp" id="rsvp-btn" onClick={handleRsvpClick}>✦ &nbsp;Click to Register Your Presence&nbsp; ✦</button>
             </div>
 
             <div className="rv t-bottom" id="r11">
